@@ -1,20 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-body{
+:root {
+    --minion-color: #F2C94C;
+    --width-break:600px
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Merriweather', serif;
+    margin: 0px;
+    width: 100%;
+    color: #333333;
+
+}
+main{
+    max-width: var(--width-break);
+    margin: auto;
+    padding: 1rem;
+}
+#btn-translate{
+    background-color: var(--minion-color);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-size: large;
+
 }
 textarea {
-    width: 80%;
-    height: 10vh;
+    box-sizing: border-box;
     display: block;
-    margin: 1rem;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+    border: 1px solid #333333;
+}
+
+.lang_selector{
+    text-align: center;;
     padding: 1rem;
 }
 
-#output {
-    border: 1px solid black;
-    height: 10vh;
-    width: 80%;
-    margin: 1rem;
+nav {
+    background-color: var(--minion-color);
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: var(--minion-color);
+    text-align: center;
     padding: 1rem;
+    width:100%;
+    
+}
+
+footer p{
+    max-width: var(--width-break);
+    margin: auto;
+}
+
+#output {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow:scroll;
+    border: 1px solid #333333;
 }

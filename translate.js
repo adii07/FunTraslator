@@ -4,6 +4,7 @@ var outputTxt=document.querySelector("#output")
 var languageOption=document.querySelector("#language")
 var talk=document.querySelector("#talk")
 
+
 btnTranslate.addEventListener("click", translateInput)
 
 function translateInput(){
