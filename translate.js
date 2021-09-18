@@ -20,7 +20,7 @@ function addActivityItem() {
     switch (y[x].text) {
         case "yoda":
             changeColor("#9cbb80","#ffffff")
-            document.getElementById("footer-para").innerText="Are you a fan of groot?\nYoda’s last words were “Luke. There is another Skywalker.” – To Luke Skywalker."
+            document.getElementById("footer-para").innerText="Are you a fan of yoda?\nYoda’s last words were “Luke. There is another Skywalker.” – To Luke Skywalker."
             break;
         case "minions":
             changeColor("#F2C94C","#333333")
